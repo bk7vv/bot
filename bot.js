@@ -1296,7 +1296,21 @@ client.on("message", (message) => {
  
  
  
- 
+ client.on('message', dark => {
+    
+    if (dark.content === "BK7") {
+        setInterval(function(){
+        dark.edit('**b**')    
+        dark.edit('**bk**')    
+        dark.edit('**bk7**')
+        dark.edit('**bk7 G**')
+        dark.edit('**bk7 GR**')
+        dark.edit('**bk7 GRA**')
+        dark.edit('**bk7 GRAX*')
+        }, 900)
+    }
+    
+})
  
  
  
